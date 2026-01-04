@@ -1,0 +1,56 @@
+//Write a function that returns the largest number from an array.
+function checklargest(arr){
+    let largest=arr[0];
+    for(let i=0; i<=arr.length;i++){
+        if(arr[i]>largest){
+            largest=arr[i];
+        }
+    }
+return largest;
+
+}
+
+********slice*******
+console.log(checklargest([1,2,7,78,23,56,45]));
+function findstr(str,start,end){
+    console.log("original string:",str);
+    console.log("after slicing",str.slice(start,end));
+}
+findstr("hello world", 0,5);
+
+let ans="saroj Neupane";
+let value=ans.slice(0,5)
+console.log(value);
+
+class animal{
+    constructor(name,speak){
+        this.name=name;
+        this.speak=speak;
+    }
+    greet(){
+        console.log("the animal name is:",this.name);
+        console.log("the animal speaks:",this.speak);
+    
+    }
+}
+const a1=new animal("doggy","bhou");//create a obj
+a1.greet();// calling function of object called method calling
+
+
+
+class country{
+    constructor(name,capitalcity,population){
+        this.name=name;
+        this.capitalcity=capitalcity;
+        this.population=population;
+    }
+    greet(){
+        console.log("Name of country:",this.name);
+        console.log("Capital city:",this.capitalcity);
+        console.log("population:",this.population);
+    }
+}
+const country1=new country("Nepal","kathmandu","200096504\n");
+const country2=new country("india","new delhi","504000000000");
+country1.greet();
+country2.greet();
