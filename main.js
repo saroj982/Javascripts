@@ -1,9 +1,6 @@
-function calculator(a,b,arthmeticfxn){
-    const ans=arthmeticfxn(a,b);
-    return ans;
+let ans=0;
+for(let i=0; i<=10;i++){
+    ans=ans+i;
 }
-function sum(a,b){
-    return a+b;
-}
-const value=calculator(4,5,sum);
-console.log(value);
+console.log(ans);
+
