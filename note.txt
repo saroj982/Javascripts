@@ -54,3 +54,42 @@ const country1=new country("Nepal","kathmandu","200096504\n");
 const country2=new country("india","new delhi","504000000000");
 country1.greet();
 country2.greet();
+
+function findsum(num){
+    let sum=0;
+    for(let i=0; i<=num; i++){
+        sum=sum+i;
+        
+    }
+    return sum;
+}
+let obj=findsum(10);
+console.log(obj);
+
+//square of two input numbers using two functions and calling inside another fxn
+function square(n){
+    return n*n;
+}
+function squaresum(a,b){
+    let value1=square(a);
+    let value2=square(b);
+    return value1+value2;
+}
+console.log(squaresum(2,3));
+
+// calling the function in the parameter or callback function
+function cube(n){
+    return n*n*n;
+}
+function square(s){
+    return s*s;
+}
+function sumcube(a,b,callback){
+    let ans1=callback(a);
+    let ans2=callback(b);
+    return ans1+ans2;
+}
+let answer=sumcube(2,3,cube);
+console.log(answer);
+let answer1=sumcube(2,3,square);
+console.log(answer1);
