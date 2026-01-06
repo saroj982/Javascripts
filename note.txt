@@ -103,3 +103,11 @@ function sumofsomething(a,b,fn){
 let ans=sumofsomething(2,3,function (a){return a*a});
 console.log(ans);
 
+//this is an achronous function
+//this help to read the file from another file
+const fs=require("fs");
+//filesystem module 
+fs.readFile("hello.txt","utf-8",function(error,data){
+    console.log(data);
+})
+console.log("hi there");
